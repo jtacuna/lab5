@@ -10,6 +10,10 @@ $(document).ready(function() {
  */
 function initializePage() {
 	console.log("Javascript connected!");
+	$('#testjs').click(function(e) {
+		preventDefault();
+		anagrammedName($(this).text());
+    });
 }
 
 function anagrammedName(name) {
